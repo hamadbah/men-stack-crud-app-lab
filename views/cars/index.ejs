@@ -1,0 +1,22 @@
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="/stylesheets/style.css" />
+ </head>
+ <body>
+    <img src="/images/banner.png" alt="Banner Image" class="banner"><br><br>
+   <div class="index-header-div">
+     <h1>All Cars</h1>
+     <a class="add-car" href="/cars/new">Add Car</a>
+     <a class="home-button" href="/">Home</a>
+   </div>
+   <ul>
+     <% cars.forEach((car)=> { %>
+     <li>
+       <a class="car-cards" href="/cars/<%=car._id%>">
+         <%= car.name %>
+       </a>
+     </li>
+     <% }) %>
+   </ul>
+ </body>

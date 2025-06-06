@@ -1,0 +1,46 @@
+<!-- you need method-override package in this situation (npm i method-override) -->
+  <!-- all template pages -->
+
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="/stylesheets/style.css" />
+ </head>
+<body>
+    <img src="/images/banner.png" alt="Banner Image" class="banner"> <br><br>
+  <h1>Edit <%= car.name %></h1>
+  <!-- _method=PUT mean telling the server to update the value and insert it to database -->
+  <form action="/cars/<%= car._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="<%= car.name %>">
+    <br>
+    <label for="yearMade">Car Manufacture Year:</label>
+    <input type="text" name="yearMade" id="yearMade" value="<%= car.yearMade %>">
+    <br>
+    <label for="carColor">Color of the car:</label>
+    <input type="text" name="carColor" id="carColor" value="<%= car.carColor %>">
+    <br>
+    <label for="carType">Car Type:</label>
+    <input type="text" name="carType" id="carType" value="<%= car.carType %>">
+    <br>
+    <div class="checkbox-div">
+    <label for="isReadyToDrive">Ready to Drive?</label>
+    <input type="checkbox" name="isReadyToDrive" id="isReadyToDrive" 
+    <% if (car.isReadyToDrive) { %> 
+      checked 
+    <% } %>
+    >
+    </div>
+    <br>
+    <label for="carImage">Change Image:</label>
+    <input type="file" name="image" accept="image/*" class="custom-file-input"><br><br>
+
+    <!-- Keep existing image filename if no new image is uploaded -->
+    <input type="hidden" name="existingImage" value="<%= car.image %>">
+    <br>
+    <button class="car-edit" type="submit">Update Car</button>
+  </form>
+  <a class="cars-index-link" href="/cars">
+   <div class="index-link-text">Back to Cars List</div>
+ </a>
+</body>

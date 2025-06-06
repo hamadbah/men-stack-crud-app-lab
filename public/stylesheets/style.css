@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(135deg, #ffe082, #ffcc80);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner {
+      width: 100%;
+      height: 300px;
+    }
+    
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+.car-pic1 {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cars-index-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cars-index-link:hover {
+  background-color: #1c5980;
+}
+
+.index-link-text {
+  font-size: 1rem;
+}
+
+.index-header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10%;
+}
+
+.index-header-div h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.add-car {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  width: 300px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.add-car:hover {
+  background-color: #1e8449;
+}
+
+.home-button{
+  padding: 10px 20px;
+  background-color: #2b2a2c;
+  color: rgb(241, 238, 242);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #bfa3f0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.car-cards {
+  display: block;
+  padding: 12px;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.car-cards:hover {
+  background-color: #d0e6f6;
+  transform: scale(1.02);
+}
+
+.car-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-details p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.edit-link {
+  display: block;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.edit-button {
+  background-color: #ecf0f1;
+  color: #0f2d79;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #d68910;
+}
+
+.car-actions {
+  margin-top: 20px;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+.delete-button {
+  background-color: #ecf0f1;
+  color: #0f2d79;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.uploaded-image {
+      width: 400px;
+      height: 300px;
+    }
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #bdc3c7;
+}
+
+.checkbox-div {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.car-edit {
+  background-color: #03a230;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.car-edit:hover {
+  background-color: #ed9b0e;
+}
+
+.custom-file-input {
+  display: inline-block;
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.custom-file-input:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

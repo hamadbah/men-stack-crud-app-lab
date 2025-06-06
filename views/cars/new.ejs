@@ -1,0 +1,33 @@
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="/stylesheets/style.css" />
+ </head>
+<body>
+    <img src="/images/banner.png" alt="Banner Image" class="banner"><br><br>
+  <h1>Add a New Car</h1>
+  <form action="/cars" method="POST" enctype="multipart/form-data">
+    <label for="name">Car Name:</label>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="yearMade">Year Made:</label>
+    <input type="text" name="yearMade" id="yearMade" required><br><br>
+
+    <label for="isReadyToDrive">Ready to Drive:</label>
+    <input type="checkbox" name="isReadyToDrive" id="isReadyToDrive"/><br><br>
+
+    <label for="carColor">Car Color:</label>
+    <input type="text" name="carColor" id="carColor" required><br><br>
+
+    <label for="carType">Car Type:</label>
+    <input type="text" name="carType" id="carType" required><br><br>
+
+    <label for="carImage">Car Image:</label>
+    <input type="file" name="image" accept="image/*" required class="custom-file-input"/><br> <br>
+    
+    <button class="add-car" type="submit">Add Car</button>
+  </form>
+     <a class="cars-index-link" href="/cars">
+     <div class="index-link-text">Back to All Cars</div>
+   </a>
+</body>
